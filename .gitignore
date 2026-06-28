@@ -1,0 +1,6 @@
+.venv
+__pycache__/
+build/
+dist/
+*.qm
+src/resources_rc.py

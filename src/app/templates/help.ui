@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>HelpWindow</class>
+ <widget class="QWidget" name="HelpWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>717</width>
+    <height>453</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>About</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QScrollArea" name="scrollArea">
+     <property name="widgetResizable">
+      <bool>true</bool>
+     </property>
+     <widget class="QWidget" name="scrollAreaWidgetContents">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>683</width>
+        <height>745</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_2">
+       <item>
+        <widget class="QLabel" name="label">
+         <property name="text">
+          <string># BabbleFish
+
+BabbleFish is a real-time speech translation app. It recognizes speech from a microphone, translates it into the selected language, and produces the result using speech synthesis.
+
+---
+
+# How BabbleFish Works
+
+The speech processing process consists of three sequential stages:
+
+### 1. Speech Recognition
+
+BabbleFish uses the **Whisper** model to convert speech to text.
+
+Before launching, you must select a Whisper model.
+
+* **Small models** are faster and require less video memory (VRAM), but provide less accurate recognition.
+* **Large models** significantly improve recognition quality, especially in the presence of noise or accents, but require more VRAM and are slower on low-end graphics cards.
+
+### 2. Text Translation
+
+After recognition, the text is automatically translated into the selected language.
+
+Before launching, specify:
+
+* source language;
+* translation language.
+
+### 3. Speech translation
+
+The translated text is converted to speech and played back through the selected output device.
+
+To use speech synthesis, you must first install voice models. This can be done using the **Get more voices...** button.
+
+---
+
+# Using in voice chats
+
+BabbleFish does not automatically create a virtual microphone.
+
+If you want to use translation during calls, streams, or voice recordings, you must install a program that emulates a virtual audio device.
+
+The simplest and most popular option is using [**VB-CABLE**](https://vb-audio.com/Cable/).
+
+## Setup
+
+1. Connect your physical microphone as the **Input Device** in BabbleFish.
+2. Select **VB-CABLE Input** as the **Output Device**.
+3. In the program where you want to use translation (Discord, Zoom, OBS, games, etc.), select **VB-CABLE Output** as the microphone.
+
+After this, your interlocutors will hear the automatically translated and voiced speech, not your original voice.
+</string>
+         </property>
+         <property name="textFormat">
+          <enum>Qt::TextFormat::MarkdownText</enum>
+         </property>
+         <property name="scaledContents">
+          <bool>false</bool>
+         </property>
+         <property name="wordWrap">
+          <bool>true</bool>
+         </property>
+         <property name="openExternalLinks">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
